@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="12.0" styleClass="root-login" prefWidth="360.0" prefHeight="380.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.java.magdezis.inversiones.examen.controller.LoginController">
+    <children>
+        <Label styleClass="titulo" text="Iniciar sesión" />
+        <Label styleClass="subtitulo" text="Ingresa tus credenciales" />
+        <TextField fx:id="txtEmail" promptText="Correo electrónico" maxWidth="260.0" />
+        <PasswordField fx:id="txtPassword" promptText="Contraseña" maxWidth="260.0" onAction="#onIngresar" />
+        <Label fx:id="lblMensaje" styleClass="error" />
+        <Button fx:id="btnIngresar" text="Ingresar" defaultButton="true" maxWidth="260.0" onAction="#onIngresar" />
+    </children>
+</VBox>

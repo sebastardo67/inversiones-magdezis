@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" styleClass="root-register" prefWidth="400.0" prefHeight="560.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.java.magdezis.inversiones.examen.controller.RegisterController">
+    <children>
+        <Label styleClass="titulo" text="Crear cuenta" />
+        <Label styleClass="subtitulo" text="Completa tus datos para registrarte" />
+        <TextField fx:id="txtNombre" promptText="Nombre" maxWidth="280.0" />
+        <TextField fx:id="txtApellido" promptText="Apellido" maxWidth="280.0" />
+        <TextField fx:id="txtEmail" promptText="Correo electrónico" maxWidth="280.0" />
+        <PasswordField fx:id="txtPassword" promptText="Contraseña" maxWidth="280.0" />
+        <PasswordField fx:id="txtConfirmar" promptText="Confirmar contraseña" maxWidth="280.0" />
+        <ComboBox fx:id="cmbRol" promptText="Selecciona un rol" prefWidth="280.0" maxWidth="280.0" />
+        <Label fx:id="lblMensaje" styleClass="error" wrapText="true" maxWidth="280.0" />
+        <Button fx:id="btnRegistrar" text="Registrar" defaultButton="true" maxWidth="280.0" onAction="#onRegistrar" />
+        <Hyperlink text="¿Ya tienes cuenta? Inicia sesión" onAction="#onVolver" />
+    </children>
+</VBox>

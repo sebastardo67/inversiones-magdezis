@@ -1,0 +1,44 @@
+.root-register {
+    -fx-background-color: #f4f6f8;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.subtitulo {
+    -fx-font-size: 13px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.text-field, .password-field {
+    -fx-pref-height: 34px;
+}
+
+.combo-box {
+    -fx-pref-height: 34px;
+}
+
+.button {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-pref-height: 36px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2ecc71;
+}
+
+.error {
+    -fx-text-fill: #c0392b;
+    -fx-font-size: 12px;
+}
+
+.exito {
+    -fx-text-fill: #27ae60;
+    -fx-font-size: 12px;
+}
